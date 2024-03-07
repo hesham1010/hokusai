@@ -6,12 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "jsonServ": "json-server --watch db.json --port 8000",
+    "app": "concurrently \"npm run jsonServ\" \"npm run dev\""
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
+    "concurrently": "^8.2.2",
+    "next": "14.1.2",
     "react": "^18",
+    "react-awesome-reveal": "^4.2.8",
+    "react-bootstrap": "^2.10.1",
     "react-dom": "^18",
-    "next": "14.1.2"
+    "react-masonry-css": "^1.0.16"
   },
   "devDependencies": {
     "eslint": "^8",
